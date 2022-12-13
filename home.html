@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="shortcut icon" type="image/png" href="images/h3.jpg">
+    <script src="https://kit.fontawesome.com/4929b1ab3c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header id="home">
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+        
+          <a class="navbar-brand fs-3 ms-3" href="#">Libray Management
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="btn">
+            <ul class="navbar-nav ms-4">
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="#about">About US</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex mx-3 " role="search" id="search-form ">
+            <input class="form-control me-2" id="query" type="text" placeholder="Search" aria-label="Search">
+            <span><input type="button" id= "searchinput" class="btn btn-light" value="Search"/></span>
+            
+          </form>
+        </div>
+      </nav>
+    </header>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/h4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><b>Learning</b></h5>
+              <p><b>Some representative placeholder content for the first slide.</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/educate.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><b>Enlightment</b></h5>
+              <p><b>Some representative placeholder content for the second slide.</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/h2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><b>Take Action</b></h5>
+              <p><b>Some representative placeholder content for the third slide.</b></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!------- Book Store ------------------------------------------->
+    <h1 class="sub-title">Books</h1>
+
+      <div class="container">
+        <div id="mycard" class="card " style="width: 18rem; ">
+
+          
+                <div class="card-body">
+                 <img src="images/C Programming.jpg" class="card-img-top" alt="..."> 
+                  <h5 class="card-title">CSS Fundamentals</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/books/a-great-book.pdf" target="_blank" class="btn btn-lg btn-dark">View</a>
+                </div> 
+              </div>
+            
+            </div>
+          
+      </div>
+
+    
+
+    
+
+      <!-- <form action="/" id="FilterForm">
+        <label for="">Author</label>
+        <input type="text" name="Author">
+        <label for="">Title</label>
+        <input type="text" name="Title">
+        <input id="filterbutton" type="button" value="Filter">
+      </form> -->
+    
+      
+    <br>
+
+      <ul class="pagination justify-content-center">
+         <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li> -->
+      </ul>
+
+
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about_c1">
+              <img src="images/h2.jpg" >
+            </div>
+            <div class="about_c2">
+              <h1 class="sub-title">About Us</h1>
+              <p> We manage all the functions of a library. It helps librarian to maintain the database of new books and the books that are borrowed by members along with their due dates. This system completely automates all your library's activities.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="copyright">
+        <p>Copyright @Krishna Vamsi.</p>
+    </div>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+
+  
+</html>
